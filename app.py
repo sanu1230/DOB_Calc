@@ -5,7 +5,7 @@ app = Flask(__name__)
 pred = 0
 note = 0
 
-@app.route('/', methods = ['POST'])
+@app.route('/', methods = ['POST', 'GET'])
 def age():
     global pred, note
     if request.method == 'POST':
